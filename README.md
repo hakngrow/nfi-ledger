@@ -22,4 +22,6 @@ Each feature (i.e. `user` and `transactions`) consists of the model, service and
 
 The `Sequelize` model is an abstraction that represents a table in the database. In the model, we define the name of the table in the database and which columns it has (and their data types).
 
-The service module 
+The service module contains functions that execute the feature.
+
+The controller module contains route mappings and request validation schemas.
