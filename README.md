@@ -12,4 +12,14 @@
 
 ![Project Structure](/public/images/project_structure.jpg)
 
-The project is structured into feature folders (i.e. `user` and `transactions`) and non-feature folders (i.e. `middleware` and `config`)
+The project is structured into feature folders (i.e. `user` and `transactions`) and non-feature shared component folders (i.e. `middleware` and `config`).  
+
+The `middleware` folder contains middleware functions that perform error handling and request validation.
+
+The `config` folder contains functions that loads config settings from the `.env` file and initializes the `Sequelize` ORM module.
+
+Each feature (i.e. `user` and `transactions`) consists of the model, service and controller modules.
+
+The `Sequelize` model is an abstraction that represents a table in the database. In the model, we define the name of the table in the database and which columns it has (and their data types).
+
+The service module 
