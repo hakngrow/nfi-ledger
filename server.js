@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 
-import UserController from './controllers/UserController.js';
-import TransactionController from './controllers/TransactionController.js';
+import UserController from './user/UserController.js';
+import TransactionController from './transaction/TransactionController.js';
 
 import errorHandler from './middleware/ErrorHandler.js';
 

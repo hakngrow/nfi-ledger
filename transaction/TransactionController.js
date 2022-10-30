@@ -1,8 +1,8 @@
 import express from 'express';
 import Joi from 'joi';
 
-import transactionService from '../services/TransactionService.js';
-import TransactionType from '../helpers/TransactionType.js';
+import transactionService from './TransactionService.js';
+import TransactionType from './TransactionType.js';
 import validateRequest from '../middleware/RequestValidator.js';
 
 // routes
@@ -12,6 +12,7 @@ const router = express.Router();
 router.get('/username/:username', getTransactionsByUsername);
 router.post('/', createTransactionSchema, createTransaction);
 router.post('/deposit', depositSchema, deposit);
+router.post('/withdraw', withdrawSchema, withdraw);
 
 export default router;
 

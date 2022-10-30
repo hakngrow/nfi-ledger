@@ -1,8 +1,8 @@
 import bcrypt from 'bcryptjs';
-import TransactionType from '../helpers/TransactionType.js';
+import TransactionType from '../transaction/TransactionType.js';
 
-import User from '../models/UserModel.js';
-import transactionService from './TransactionService.js';
+import User from './UserModel.js';
+import transactionService from '../transaction/TransactionService.js';
 
 async function getAll() {
     return await User.findAll();

@@ -1,8 +1,8 @@
 import express from 'express';
 import Joi from 'joi';
 
-import userService from '../services/UserService.js';
-import Role from '../helpers/Role.js';
+import userService from './UserService.js';
+import Role from './Role.js';
 import validateRequest from '../middleware/RequestValidator.js';
 
 // routes
