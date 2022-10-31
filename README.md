@@ -28,6 +28,8 @@ The controller module contains route mappings and request validation schemas.
 
 ## 3. REST APIs
 
+The following are the requested APIs in Postman documentation: 
+
 [Register new user](https://documenter.getpostman.com/view/13967603/2s8YRducS3#6f65d61b-099e-4910-ade8-02cd3fbc644a)
 
 [Deposit](https://documenter.getpostman.com/view/13967603/2s8YRducS3#e53af743-6317-4a91-ab76-f3a8c620fb02)
