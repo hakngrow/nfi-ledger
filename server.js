@@ -23,3 +23,5 @@ app.use(errorHandler);
 // start server
 const port = process.env.SERVER_ENV === 'development' ? process.env.SERVER_PORT_DEV : process.env.SERVER_PORT_PRO;
 app.listen(port, () => console.log(`Server up and listening on port ${port}...`));
+
+export default app;

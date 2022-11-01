@@ -15,6 +15,10 @@ async function create(params) {
     await transaction.save();
 }
 
+async function deleteAll() {
+    await Transaction.destroyAll();
+}
+
 async function deposit(params) {
 
     // retrieve user balance

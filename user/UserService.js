@@ -69,6 +69,10 @@ async function _delete(id) {
     await user.destroy();
 }
 
+async function _deleteAll() {
+    await User.destroyAll();
+}
+
 // helper functions
 
 async function getUser(id) {
@@ -83,5 +87,6 @@ export default {
     getByUsername,
     create,
     update,
-    delete: _delete
+    delete: _delete,
+    deleteAll: _deleteAll
 };

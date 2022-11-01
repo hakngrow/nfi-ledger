@@ -14,6 +14,7 @@ router.get('/id/:id', getUserById);
 router.post('/', createUserSchema, createUser);
 router.patch('/id/:id', updateUserSchema, updateUser);
 router.delete('/id/:id', deleteUserSchema, deleteUser);
+router.delete('/', deleteUsers);
 
 export default router;
 
@@ -64,6 +65,16 @@ function deleteUser(req, res, next) {
     try {
         userService.delete(req.params.id)
             .then(() => res.status(200).json({ message: 'user deleted' }))
+            .catch(next);
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+function deleteUsers(req, res, next) {
+    try {
+        userService.deleteAll()
+            .then(() => res.status(200).json({ message: 'all users deleted' }))
             .catch(next);
     } catch (error) {
         console.log(error.message);
